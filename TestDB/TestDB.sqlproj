@@ -9,8 +9,7 @@
     <ProjectGuid>{13f2fbb2-5b79-45ce-8c86-894f99f3e1e6}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath />
     <RootNamespace>TestDB</RootNamespace>
     <AssemblyName>TestDB</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -48,7 +47,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -59,5 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Persons.sql" />
+    <Build Include="sp_Persons_Select.sql" />
+    <Build Include="sp_Persons_Insert.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="TestDB.refactorlog" />
   </ItemGroup>
 </Project>
