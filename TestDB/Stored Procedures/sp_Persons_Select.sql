@@ -7,6 +7,7 @@ begin
 			,[Persons].[Name]
 			,[Persons].[Patronymic]
 			,[Persons].[DateOfBirth]
+			,[Persons].[Email]
 			,[Persons].[Phone]
 		from [dbo].Persons
 		where [Persons].[Id] = @Id;

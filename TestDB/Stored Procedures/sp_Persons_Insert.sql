@@ -18,7 +18,7 @@ begin
 				,[Name]
 				,[Patronymic]
 				,[DateOfBirth]
-				,[Email])				
+				,[Email]				
 				,[Phone])
 			values
 				(@Id
@@ -26,6 +26,6 @@ begin
 				,@Name
 				,@Patronymic
 				,@DateOfBirth
-				,@Email);				
+				,@Email				
 				,@Phone);
 end
