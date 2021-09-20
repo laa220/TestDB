@@ -3,7 +3,7 @@
 	[Id] INT NOT NULL PRIMARY KEY, 
     [Surname] NVARCHAR(50) NOT NULL, 
     [Name] NVARCHAR(50) NOT NULL, 
-    [Patronymic] NVARCHAR(50) NULL, 
+    [Patronymic] NVARCHAR(55) NULL, 
     [DateOfBirth] DATE NULL, 
     [DateInput] DATETIME NULL constraint [DF_Persons_DateInput] default (getdate())
 )
