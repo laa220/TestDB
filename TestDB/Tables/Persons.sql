@@ -6,7 +6,7 @@
     [Patronymic] NVARCHAR(55) NULL, 
     [DateOfBirth] DATE NULL, 
     [DateInput] DATETIME NULL constraint [DF_Persons_DateInput] default (getdate()),    
-    [Email] NVARCHAR(50) NULL,    
+    [Email] NVARCHAR(400) NULL,    
     [Phone] VARCHAR(15) NULL,
     [DateCorrection] DATETIME NULL constraint [DF_Persons_DateCorrection] DEFAULT (getdate())
     

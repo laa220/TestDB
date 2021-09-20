@@ -4,7 +4,7 @@
 	,@Name			nvarchar(50)			--Имя
 	,@Patronymic	nvarchar(50)	=NULL	--Отчество	
 	,@DateOfBirth	date					--Дата рождения
-	,@Email			nvarchar(50)	=null	--email
+	,@Email			nvarchar(400)	=null	--email
 	,@Phone			nvarchar(15)	=null	--tel
 AS
 begin
