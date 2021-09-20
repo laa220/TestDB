@@ -4,6 +4,7 @@
 	,@Name			nvarchar(50)			--Имя
 	,@Patronymic	nvarchar(50)	=NULL	--Отчество	
 	,@DateOfBirth	date			=NULL	--Дата рождения
+	,@Email			nvarchar(50)	=null	--email
 AS
 begin
 	-- set nocount on запрещает вывод количества строк, на которые влияет
@@ -15,6 +16,7 @@ begin
 			,[Name]			= @Name
 			,[Patronymic]	= @Patronymic
 			,[DateOfBirth]	= @DateOfBirth
+			,[Email]		=@Email
 			,[DateCorrection]=getdate()
 		where [Id]=@Id;
 end

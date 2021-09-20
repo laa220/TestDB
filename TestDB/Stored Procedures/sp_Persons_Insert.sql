@@ -4,6 +4,7 @@
 	,@Name			nvarchar(50)			--Имя
 	,@Patronymic	nvarchar(50)	=NULL	--Отчество	
 	,@DateOfBirth	date					--Дата рождения
+	,@Email			nvarchar(50)	=null	--email
 AS
 begin
 	-- set nocount on запрещает вывод количества строк, на которые влияет
@@ -15,11 +16,13 @@ begin
 				,[Surname]
 				,[Name]
 				,[Patronymic]
-				,[DateOfBirth])
+				,[DateOfBirth]
+				,[Email])
 			values
 				(@Id
 				,@Surname
 				,@Name
 				,@Patronymic
-				,@DateOfBirth);
+				,@DateOfBirth
+				,@Email);
 end
