@@ -4,6 +4,7 @@
 	,@Name			nvarchar(50)			--Имя
 	,@Patronymic	nvarchar(50)	=NULL	--Отчество	
 	,@DateOfBirth	date			=NULL	--Дата рождения
+	,@Email			nvarchar(50)	=null	--email
 	,@Phone			nvarchar(15)	=null	--tel
 AS
 begin
@@ -16,6 +17,7 @@ begin
 			,[Name]			= @Name
 			,[Patronymic]	= @Patronymic
 			,[DateOfBirth]	= @DateOfBirth
+			,[Email]		=@Email
 			,[DateCorrection]=getdate()
 			,[Phone]		=@Phone
 		where [Id]=@Id;
