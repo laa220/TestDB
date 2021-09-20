@@ -4,6 +4,7 @@
 	,@Name			nvarchar(50)			--Имя
 	,@Patronymic	nvarchar(50)	=NULL	--Отчество	
 	,@DateOfBirth	date			=NULL	--Дата рождения
+	,@Phone			nvarchar(15)	=null	--tel
 AS
 begin
 	-- set nocount on запрещает вывод количества строк, на которые влияет
@@ -16,5 +17,6 @@ begin
 			,[Patronymic]	= @Patronymic
 			,[DateOfBirth]	= @DateOfBirth
 			,[DateCorrection]=getdate()
+			,[Phone]		=@Phone
 		where [Id]=@Id;
 end
