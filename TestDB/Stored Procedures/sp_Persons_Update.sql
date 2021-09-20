@@ -15,5 +15,6 @@ begin
 			,[Name]			= @Name
 			,[Patronymic]	= @Patronymic
 			,[DateOfBirth]	= @DateOfBirth
+			,[DateCorrection]=getdate()
 		where [Id]=@Id;
 end
