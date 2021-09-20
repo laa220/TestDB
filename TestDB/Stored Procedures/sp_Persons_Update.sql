@@ -18,7 +18,8 @@ begin
 			,[Patronymic]	= @Patronymic
 			,[DateOfBirth]	= @DateOfBirth
 			,[Email]		=@Email
-			,[DateCorrection]=getdate()
 			,[Phone]		=@Phone
+			,[DateCorrection]=getdate()
+			
 		where [Id]=@Id;
 end
