@@ -8,6 +8,7 @@
     [DateInput] DATETIME NULL constraint [DF_Persons_DateInput] default (getdate()),    
     [Email] NVARCHAR(400) NULL,    
     [Phone] VARCHAR(15) NULL,
+    [login] NVARCHAR(50) NULL,
     [DateCorrection] DATETIME NULL constraint [DF_Persons_DateCorrection] DEFAULT (getdate())
     
 )
